@@ -11,12 +11,16 @@ public class Main {
         c.setTime(now);
         // Calenderから日の数値を取得
         int day = c.get(Calendar.DAY_OF_MONTH);
-        // 取得した値に＋100してCalenderの日にセット
-        //  day += 100;
-        //  c.add(Calendar.DAY_OF_MONTH);
+        /*
+        取得した値に＋100してCalenderの日にセット
+        day += 100;
+        c.add(Calendar.DAY_OF_MONTH);
+        */
         c.add(Calendar.DAY_OF_MONTH, 100);
-        // Calender日時情報をDate型に変換
-        // Date future = c.getTime();
+        /*
+        Calender日時情報をDate型に変換
+        Date future = c.getTime();
+        */
         now = c.getTime();
         // SimpleDataFormatで指定された形式でDateインスタンスの内容表示
         SimpleDateFormat f = new SimpleDateFormat("yyyy年MM月dd日");

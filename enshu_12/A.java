@@ -1,4 +1,7 @@
-// 抽象クラスYを最終クラス：Aに継承
+/*
+抽象クラスYを最終クラス：Aに継承
+最終クラスのためクラスAは継承不可
+*/
 public final class A extends Y {
     public void a() { System.out.print("Aa"); }
     public void b() { System.out.print("Ab"); }

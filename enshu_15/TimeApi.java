@@ -1,4 +1,8 @@
-// 自力で解決できなかった演習
+/*
+自力で解決できなかった演習
+時間操作
+
+*/
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
@@ -10,7 +14,7 @@ public class TimeApi {
         LocalDate future = now.plusDays(100);
         // 書式設定
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-        // 100日後の日付を定義した書式に置き換える
+        // 100日後の日付を上で定義した書式に置き換える（format(fmt)）
         System.out.println(future.format(fmt));
     }  
 }

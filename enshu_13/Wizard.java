@@ -7,8 +7,10 @@ public class Wizard {
     void heal(Hero h) {
         System.out.println(this.name + "は" + getWand().getName() + "を装備している");
         int basePoint = 10;                                   // 基本回復ポイント
-        // wand.powerではフィールドがprivateのためアクセス不可
-        // getWand().getPower() = セットされたwandインスタンスの(.)powerフィールドを呼び出し
+        /*
+        wand.powerではフィールドがprivateのためアクセス不可
+        getWand().getPower() = セットされたwandインスタンスの(.)powerフィールドを呼び出し
+        */
         int recovPoint = (int)(basePoint * getWand().getPower());  // 杖による増幅
         int cost_mp = 20; //消費MP
         System.out.println("MPを" + cost_mp + "消費した");
@@ -47,6 +49,7 @@ public class Wizard {
 
     void setMp(int mp) {
         if(mp < 0) {
+            // 自ら例外を投げる
             throw new IllegalArgumentException("設定するMP値が異常です");
         }
         this.mp = mp;

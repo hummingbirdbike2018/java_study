@@ -28,11 +28,11 @@ public class Account {
         if(o instanceof Account) {
             // Account型変数aに、Object型変数oをAccount型としてキャストして代入
             Account a = (Account)o;
-            // String型変数an1に口座番号をtrimで空白を削除して代入
+            // String型変数an1に口座番号をtrimで前後空白を削除して代入
             String an1 = this.accountNumber.trim();
             // 同様にインスタンスaも処理
             String an2 = a.accountNumber.trim();
-            // String型変数an1, an2は内容が一致（等価)しているか
+            // String型変数an1, an2は内容が一致（等価の場合equalsを使用)しているか
             if(an1.equals(an2)) {
                 return true;
             }

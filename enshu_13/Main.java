@@ -1,3 +1,10 @@
+/*
+カプセル化
+インスタンスのもつフィールドを誤って書き換えてしまう事を防ぐ
+基本的にフィールドはprivate(子クラス、外部クラスからアクセスできない)で設定
+フィールド値の変更はゲッター、セッターメソッドを使う
+*/
+
 public class Main {
     public static void main(String[] args) {
         Wizard wz = new Wizard();

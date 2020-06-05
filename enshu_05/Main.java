@@ -24,7 +24,7 @@ public class Main {
         System.out.println("件名：" + title);
         System.out.println("本文：" + text);
     }
-    // emailメソッドのオーバーライド
+    /* 引数を変更することによって違うメソッドとしてオーバーライドできる */
     public static void email(String address, String text) {
         System.out.println(address + "に以下のメールを送信しました");
         System.out.println("件名：無題");

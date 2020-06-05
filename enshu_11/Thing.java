@@ -1,10 +1,17 @@
-// インターフェイス：Thing
-public interface Thing {
-    // インターフェイスではフィールドおよび完成したメソッドはもたない
-    // double weight;
+/*
+インターフェイス：サービスで言うところのメニュー
+継承階層の最上位で基本的にフィールドを持たず、完成したメソッドは１つも持たない
+定数は宣言可能
 
-    // 未完成getWeightメソッド
+・複数の子クラスに共通のメソッド郡を実装するよう強制する
+・とあるクラスがインターフェースを実装していれば、そのインターフェースが定めたメソッドを持っているこが保証される
+・内部実装を持たないため、多重継承が可能
+*/
+public interface Thing {
+    // finalは自動的に補完される
+    String HOGE = "hoge";
+    // インターフェースに限り、abstractを省略可
     double getWeight();
-    // 未完成setWeightメソッド
+    // 未完成メソッド
     void setWeight(double weight);
 }

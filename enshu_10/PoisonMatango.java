@@ -10,7 +10,7 @@ public class PoisonMatango extends Matango {
     }
     // 攻撃メソッド
     public void attack(Hero h) {
-        // お化けキノコ通常攻撃
+        // 継承元クラスのメソッド呼び出し
         super.attack(h);
         //毒攻撃フラグ
         if(this.attack_times > 0) {

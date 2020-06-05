@@ -8,6 +8,8 @@ public class Array {
         boolean[] answers = new boolean[2];
         String[] names = {"suzuki", "tanaka", "takahashi"};
 
+        /* ”z—ñ‚Ì‘€ì‚ª‘z’è‚³‚ê‚éê‡‚ÍÅ‰‚©‚çArrayList‚ğg‚¤ */
+
         // 4-2
         int[] moneyList = {121902, 8302, 55100};
 

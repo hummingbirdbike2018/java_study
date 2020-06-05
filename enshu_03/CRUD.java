@@ -21,6 +21,7 @@ public class CRUD {
             case 4 :
                 System.out.println("•ÏX‚µ‚Ü‚·");
                 break;
+            // ‚¢‚¸‚ê‚É‚àŠY“–‚µ‚È‚¢‚Æ‚«
             default :
             System.out.println("ŠY“–ƒƒjƒ…[‚ª‚ ‚è‚Ü‚¹‚ñ");
         }

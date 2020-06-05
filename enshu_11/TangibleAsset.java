@@ -1,4 +1,8 @@
-// 資産、物質＞有形資産
+/*
+資産、物質＞有形資産
+異種の継承はimplements、インターフェースに限り多重継承できる
+同種の継承はextends
+*/
 public abstract class TangibleAsset extends Asset implements Thing {
     String color;
     //ここでインターフェイスのフィールドを宣言
