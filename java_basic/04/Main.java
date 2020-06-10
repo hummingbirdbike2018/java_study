@@ -22,7 +22,7 @@ public class Main {
                 /*
                 コピー元の装備を変更
                 別クラスのインスタンスフィールドを複製したい場合、そのクラスにもCloneableを実装し
-                対象フィールドをresuly field = this,field.clone();のように記述する
+                対象フィールドをresult field = this,field.clone();のように記述する
                 */
                 h1.getSword().setName("ヒノキの棒");
                 // コピー元の装備を表示

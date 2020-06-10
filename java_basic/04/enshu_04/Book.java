@@ -1,3 +1,6 @@
+// import文
+import java.util.*;
+
 class Book implements Comparable<Book>, Cloneable {
     // フィールド
     private String title;
@@ -19,10 +22,8 @@ class Book implements Comparable<Book>, Cloneable {
         return result;                              
     }
 
-    /* 
-    オーバーライドclone
-    Dateクラスでもcloneメソッドを定義しておく
-    */
+    
+    // オーバーライドclone
     public Book clone() {
         Book b = new Book(title, publishDate, comment);
         b.title  = this.title;
@@ -40,10 +41,7 @@ class Book implements Comparable<Book>, Cloneable {
         return true;
     }                                                
     // オーバライドcompareTo
-    /*
-    わからなった部分 
-    DateクラスでもcompareToメソッドを定義しておく
-    */
+    // わからなった部分 
     public int compareTo(Book o) {
         return this.publishDate.compareTo(o.publishDate);
     }
@@ -63,5 +61,13 @@ class Book implements Comparable<Book>, Cloneable {
 
     public String getComment() {
         return this.comment;
+    }
+
+    public void setPublishDate(Date publishDate) {
+        this.publishDate =  publishDate;
+    }
+
+    public Date getPublishDate() {
+        return this.publishDate;
     }
 }
