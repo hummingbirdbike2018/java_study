@@ -4,7 +4,7 @@
 
 import java.util.*;
 
-public class Main {
+public class Sample {
 	public static void main(String[] args) {
         // ‚P?‚P
         StringBuilder sb = new StringBuilder();
